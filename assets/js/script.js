@@ -2,7 +2,7 @@
 
 // * TODO: Present timeblocks for standard business hours when the user scrolls down.
 
-// TODO: Color-code each timeblock based on past, present, and future when the timeblock is viewed.
+// * TODO: Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
 // TODO: Allow a user to enter an event when they click a timeblock
 
@@ -105,5 +105,16 @@ if (currentHour > 17) {
     textArea5PmElm.css('background-color', '#90EE90')
 };
 
-
 // ! End of Color-code timeblock section
+
+// ! Start of User input section
+
+let save9Btn = $('.save9');
+save9Btn.on('click', function() {
+    let note9 = textArea9AmElm.val();
+    localStorage.setItem('note9', note9);
+});
+
+
+
+// ! End of User input section
