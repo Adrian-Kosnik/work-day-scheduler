@@ -1,4 +1,4 @@
-// TODO: Display the current day at the top of the calender when a user opens the planner.
+// * TODO: Display the current day at the top of the calender when a user opens the planner.
 
 // TODO: Present timeblocks for standard business hours when the user scrolls down.
 
@@ -10,3 +10,11 @@
 
 // TODO: Persist events between refreshes of a page
 
+// ! Current Day section
+let currentDayElm = $("#currentDay");
+let todayDate = moment().format('dddd, MMMM Do');
+let todayDateElm = $("<div>");
+
+currentDayElm.append(todayDate);
+
+// ! End of Current Day section
