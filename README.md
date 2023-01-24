@@ -12,6 +12,8 @@ When user clicks 'Save' an alert pops up on screen to inform the user that their
 
 ![alt text](assets/images/Screenshot-alert.png)
 
+You can see this app at: https://adrian-kosnik.github.io/work-day-scheduler/
+
 ## Installation
 
 N/A
