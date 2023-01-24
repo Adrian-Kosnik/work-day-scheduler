@@ -4,11 +4,11 @@
 
 // * TODO: Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
-// TODO: Allow a user to enter an event when they click a timeblock
+// * TODO: Allow a user to enter an event when they click a timeblock
 
-// TODO: Save the event in local storage when the save button is clicked in that timeblock.
+// * TODO: Save the event in local storage when the save button is clicked in that timeblock.
 
-// TODO: Persist events between refreshes of a page
+// * TODO: Persist events between refreshes of a page
 
 // ! Start of Current Day section
 let currentDayElm = $("#currentDay");
@@ -169,6 +169,30 @@ save5Btn.on('click', function() {
     alert('Saved');
 });
 
+// This checks browsers memory and popultes the input field values
+// with whatever is stored in browsers memory.
+
+// This grabs all related values from browser memory.
+let am9 = localStorage.getItem('note9');
+let am10 = localStorage.getItem('note10');
+let am11 = localStorage.getItem('note11');
+let pm12 = localStorage.getItem('note12');
+let pm1 = localStorage.getItem('note1');
+let pm2 = localStorage.getItem('note2');
+let pm3 = localStorage.getItem('note3');
+let pm4 = localStorage.getItem('note4');
+let pm5 = localStorage.getItem('note5');
+
+// This sets the value of each input field to the values stored in memory.
+textArea9AmElm.attr('value', am9);
+textArea10AmElm.attr('value', am10);
+textArea11AmElm.attr('value', am11);
+textArea12PmElm.attr('value', pm12);
+textArea1PmElm.attr('value', pm1);
+textArea2PmElm.attr('value', pm2);
+textArea3PmElm.attr('value', pm3);
+textArea4PmElm.attr('value', pm4);
+textArea5PmElm.attr('value', pm5);
 
 
 // ! End of User input section
