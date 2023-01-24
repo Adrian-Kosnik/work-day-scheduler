@@ -21,6 +21,7 @@ currentDayElm.append(todayDate);
 // ! Start of Color-code timeblock section
 // currentHour is in the 24h format 
 let currentHour = moment().format('H');
+// Selecting all text area elements.
 let textArea9AmElm = $('.9-input');
 let textArea10AmElm = $('.10-input');
 let textArea11AmElm = $('.11-input');
@@ -109,10 +110,54 @@ if (currentHour > 17) {
 
 // ! Start of User input section
 
+// Selecting all save buttons from the HTML file.
 let save9Btn = $('.save9');
+let save10Btn = $('.save10');
+let save11Btn = $('.save11');
+let save12Btn = $('.save12');
+let save1Btn = $('.save1');
+let save2Btn = $('.save2');
+let save3Btn = $('.save3');
+let save4Btn = $('.save4');
+let save5Btn = $('.save5');
+
+// This event listener checks if the save button was clicked
+// and stores the input fields value to browsers memory.
 save9Btn.on('click', function() {
     let note9 = textArea9AmElm.val();
     localStorage.setItem('note9', note9);
+});
+save10Btn.on('click', function() {
+    let note10 = textArea10AmElm.val();
+    localStorage.setItem('note10', note10);
+});
+save11Btn.on('click', function() {
+    let note11 = textArea11AmElm.val();
+    localStorage.setItem('note11', note11);
+});
+save12Btn.on('click', function() {
+    let note12 = textArea12PmElm.val();
+    localStorage.setItem('note12', note12);
+});
+save1Btn.on('click', function() {
+    let note1 = textArea1PmElm.val();
+    localStorage.setItem('note1', note1);
+});
+save2Btn.on('click', function() {
+    let note2 = textArea2PmElm.val();
+    localStorage.setItem('note2', note2);
+});
+save3Btn.on('click', function() {
+    let note3 = textArea3PmElm.val();
+    localStorage.setItem('note3', note3);
+});
+save4Btn.on('click', function() {
+    let note4 = textArea4PmElm.val();
+    localStorage.setItem('note4', note4);
+});
+save5Btn.on('click', function() {
+    let note5 = textArea5PmElm.val();
+    localStorage.setItem('note5', note5);
 });
 
 
