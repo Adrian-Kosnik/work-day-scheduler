@@ -126,38 +126,47 @@ let save5Btn = $('.save5');
 save9Btn.on('click', function() {
     let note9 = textArea9AmElm.val();
     localStorage.setItem('note9', note9);
+    alert('Saved');
 });
 save10Btn.on('click', function() {
     let note10 = textArea10AmElm.val();
     localStorage.setItem('note10', note10);
+    alert('Saved');
 });
 save11Btn.on('click', function() {
     let note11 = textArea11AmElm.val();
     localStorage.setItem('note11', note11);
+    alert('Saved');
 });
 save12Btn.on('click', function() {
     let note12 = textArea12PmElm.val();
     localStorage.setItem('note12', note12);
+    alert('Saved');
 });
 save1Btn.on('click', function() {
     let note1 = textArea1PmElm.val();
     localStorage.setItem('note1', note1);
+    alert('Saved');
 });
 save2Btn.on('click', function() {
     let note2 = textArea2PmElm.val();
     localStorage.setItem('note2', note2);
+    alert('Saved');
 });
 save3Btn.on('click', function() {
     let note3 = textArea3PmElm.val();
     localStorage.setItem('note3', note3);
+    alert('Saved');
 });
 save4Btn.on('click', function() {
     let note4 = textArea4PmElm.val();
     localStorage.setItem('note4', note4);
+    alert('Saved');
 });
 save5Btn.on('click', function() {
     let note5 = textArea5PmElm.val();
     localStorage.setItem('note5', note5);
+    alert('Saved');
 });
 
 
